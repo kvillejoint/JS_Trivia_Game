@@ -1,10 +1,10 @@
-/*
 body {
-	background-image: url(../images/wolverine-wallpaper.jpg);
+	background-image: url(../images/wolverine.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
     color: white;
-} */
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 .container {
 	text-align: center;
@@ -16,4 +16,16 @@ body {
 
 .incorrect {
 	color: red;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+header {
+	font-size: 40px;
+}
+
+#timeLeft {
+	font-size: 20px;
 }

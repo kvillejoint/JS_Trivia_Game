@@ -11,7 +11,7 @@ $(document).ready(function() {
 			if (timeLeft === 0) {
 				clearInterval(countdownTimer);
 //end game (show result counters
-				endGame();
+				displayScore();
 			}
 		}, 1000);
 	}
