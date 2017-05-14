@@ -18,52 +18,83 @@
 </head>
 <body>
 	<div class="container">
-		<header><b>Trivia Game!</b></header>
-		<br />
-		<div class="timeLeft" >Time Remaining:</div>
-		<br />
-		<p class="question" id="question1">Insert Question 1 Here</p>
-		 	<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 3</label> 
-			<label class="radio-inline"><input type="radio" name="optradio">Option 4</label>
-		<br />
-		<p class="question" id="question2">Insert Question 2 Here</p>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 3</label> 
-			<label class="radio-inline"><input type="radio" name="optradio">Option 4</label>
-		<br />
-		<p class="question" id="question3">Insert Question 3 Here</p>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 3</label> 
-			<label class="radio-inline"><input type="radio" name="optradio">Option 4</label>
-		<br />
-		<p class="question" id="question4">Insert Question 4 Here</p>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 3</label> 
-			<label class="radio-inline"><input type="radio" name="optradio">Option 4</label>
-		<br />
-		<p class="question" id="question5">Insert Question 5 Here</p>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 3</label> 
-			<label class="radio-inline"><input type="radio" name="optradio">Option 4</label>
-		<br />
-		<p class="question" id="question6">Insert Question 6 Here</p>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 3</label> 
-			<label class="radio-inline"><input type="radio" name="optradio">Option 4</label>
-		<br />
-		<p class="question" id="question7">Insert Question 7 Here</p>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 3</label> 
-			<label class="radio-inline"><input type="radio" name="optradio">Option 4</label>
+		<div class="row">
+			<header><b>X-Men's Wolverine: Trivia Game!</b></header>
+			<br />
+			<div id="timeLeft" >Time Remaining: </div>
+			<br />
+			<button type="button" class="btn btn-primary" id="start">Start</button>
+			<button type="button" class="btn btn-primary" id="submit">Submit</button>
+		</div>
 
+		<div class="quiz" style="display:none">
+			<br />
+			<div class="row question">
+				<div class="col-xs-12">
+	        		<h3>What is the name of the metal in Wolverine's body?</h3>
+			        <span class="clock"></span>
+			        <form>
+			          <input class="radio-inline" type="radio" name="question1" value="false">A. Steel
+			          <br>
+			          <input class="radio-inline" type="radio" name="question1" value="false">B. Vibranium
+			          <br>
+			          <input class="radio-inline" type="radio" name="question1" value="true">C. Adamantium
+			        </form>
+			    </div>
+			<div class="row question">
+				<div class="col-xs-12">
+	        		<h3>What is Wolverine's first name?</h3>
+			        <span class="clock"></span>
+			        <form>
+			          <input class="radio-inline" type="radio" name="question2" value="true">A. James
+			          <br>
+			          <input class="radio-inline" type="radio" name="question2" value="false">B. Logan
+			          <br>
+			        </form>
+			    </div>
+			
+			<div class="row question">
+				<div class="col-xs-12">
+	        		<h3>What ability does Wolverine rely on most in a fight?</h3>
+			        <span class="clock"></span>
+			        <form>
+			          <input class="radio-inline" type="radio" name="question3" value="false">A. Metal Skeleton/Claws
+			          <br>
+			          <input class="radio-inline" type="radio" name="question3" value="true">B. Healing factor
+			          <br>
+			        </form>
+			    </div>	
+		
+			<div class="row question">
+				<div class="col-xs-12">
+	        		<h3>What is the name of Wolverine's child?</h3>
+			        <span class="clock"></span>
+			        <form>
+			          <input class="radio-inline" type="radio" name="question4" value="false">A. Laura
+			          <br>
+			          <input class="radio-inline" type="radio" name="question4" value="false">B. X-23
+			          <br>
+			          <input class="radio-inline" type="radio" name="question4" value="true">C. Both A and B
+			          <br>
+			        </form>
+			    </div>
+			</div>
+
+			<div class="row question">
+				<div class="col-xs-12">
+	        		<h3>When was Wolverine born?</h3>
+			        <span class="clock"></span>
+			        <form>
+			          <input class="radio-inline" type="radio" name="question5" value="false">A. 1886
+			          <br>
+			          <input class="radio-inline" type="radio" name="question5" value="false">B. 1907
+			          <br>
+			          <input class="radio-inline" type="radio" name="question5" value="true">C. 1915
+			          <br>
+			        </form>
+			    </div>			
+			</div>
+		</div>
 	</div>
 </body>
 </html>
